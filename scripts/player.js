@@ -8,18 +8,19 @@ class Player {
 
   getDuration() {
     return this.soundObject.getDuration();
+
   }
 
   getTime() {
     return this.soundObject.getTime();
   }
-/*
+
   prettyTime (timeInSeconds) {
-    let minutes = Math.floor(this.timeInSeconds / 60);
-    let seconds = Math.floor(this.timeInSeconds - minutes);
+    let minutes = Math.floor(timeInSeconds / 60);
+    let seconds = Number (timeInSeconds % 60 / 100).toFixed(2).substring(2);
     return minutes + ":" + seconds;
   }
-*/
+
   playPause (song = this.currentlyPlaying) {
     if (this.currentlyPlaying !== song) {
       // Stop the currently playing sound file (even if nothing is playing)
