@@ -12,3 +12,4 @@ and durations in minutes and seconds.
 
 Here is a [link](https://hlipper-bloc-jams.netlify.com/) to the live site on Netlify.
 
+![Here is a screen shot of the UI](bloc-jams-screenshot.png)
